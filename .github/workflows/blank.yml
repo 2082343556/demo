@@ -14,8 +14,6 @@ jobs:
         run: |
           mkdir depot
           cd depot
-          sudo apt update
-          sudo apt install git python
           git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
           echo 'export PATH="$PATH:$HOME/depot_tools"' >> ~/.bashrc
           source ~/.bashrc
