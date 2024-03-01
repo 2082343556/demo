@@ -15,8 +15,7 @@ jobs:
           mkdir depot
           cd depot
           git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
-          echo 'export PATH="$PATH:$HOME/depot_tools"' >> ~/.bashrc
-          source ~/.bashrc
+          export PATH=$PATH:$(pwd)
 
       - name: Get Chromium
         run: |
